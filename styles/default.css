@@ -1,0 +1,61 @@
+:root{
+    --text-color-lt: rgba(110, 110, 110, 1);
+    --text-color-drk: #000;
+    --bg-pink: #DA8E91;
+    --bg-blue: #B9D9FE;
+    --btn-color: #A797A7;
+    --dark-pink: #DB2A5D;
+}
+
+html { scroll-behavior: smooth; }
+
+body { 
+    font-family: 'Roboto Mono', monospace; 
+    background: linear-gradient(0deg, rgba(218,142,145,1) 31%, rgba(185,217,240,1) 100%);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color-lt);
+    font-weight: 600;
+}
+
+li a {
+    position: relative;
+
+}
+
+li a:hover , .links:hover{
+    color: var(--text-color-drk);
+  }
+
+  li a::before, .links::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  li a:hover::before, .links:hover::before {
+    transform: scaleX(1);
+  }
+
+li {
+    list-style: none;
+    font-size: 20px;
+}

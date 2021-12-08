@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <title>Gabe Pereira</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="header">
+            <div class="img-container">
+                <img class="logo"src="./assets/temporary-logo.png" alt="">
+            </div>
+            <nav class="nav-container">
+                <label for="toggle">&#9776;</label>
+                <input id="toggle" type="checkbox">
+                <ul class="nav-links">
+                    <li><a class="links"href="#home-page">Home</a></li>
+                    <li><a class="links"href="#about-page">About</a></li>
+                    <li><a class="links"href="#projects">Project</a></li>
+                    <li><a class="links"href="#contacts-page">Let's Chat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="extra" id="home-page">
+        <div class="header-content-container">
+            <div class="home-page-content">
+                <h1>Hello there. My name is Gabe and I'm a Frontend Developer</h1>
+                <h3>I use javascript to build things on the web.</h3>
+                <h3>I aspire to create meaningful and professional digital experiences.</h3>
+            </div>
+            <div class="animation-me">
+                <div class="me-animation">
+                    <span class="head"></span>
+                    <span class="glasses">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <div class="img-container bow-tie">
+                        <img src="./assets/bow-tie.png" alt="">
+                    </div>
+                    <span class="top-body"></span>
+                </div>
+                <div class="btn-container">
+                  <a href="#contacts-page">Let's Chat</a>
+                </div>
+            </div>
+        </div>
+        <div class="gif-container">
+            <a href="#home-page">
+                <i class="fas fa-arrow-circle-up"></i>
+            </a>
+        </div>
+    </section>
+    <section class="about-section" id="about-page">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="img-container">
+                <img src="assets/cover-photo.jpeg" alt="">
+            </div>
+            <div class="about-content">
+                <p>I enjoy taking on projects that challenge and pull me into new directions. I am a student of Devlsopes Web Academy where I've learned to work with Javascipt, Node.Js, HTML/CSS and React.Js. I  enjoy working on the front end and use clean code to perform the task at hand.</p> 
+            </div>
+            </div>     
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="cards-container">
+
+            <div class="card">
+                <h3>Connect Four</h3>
+                <div class="img-container">
+                    <img src="assets/temporary-logo.png" alt="">
+                </div>
+                <p>Vanilla Javascipt, HTML, CSS</p>
+                <a class="links" href="#">Link</a>
+            </div>
+            <div class="card">
+                <h3>Debt Calculator</h3>
+                <div class="img-container">
+                    <img src="assets/temporary-logo.png" alt="">
+                </div>
+                <p>React JS</p>
+                <a class="links" href="#">Link</a>
+            </div>
+
+            <div class="card">
+                <h3>Pokedex</h3>
+                <div class="img-container">
+                    <img src="assets/temporary-logo.png" alt="">
+                </div>
+                <p>Vanilla Javascript, HTML, CSS</p>
+                <a class="links" href="#">Link</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts-page">
+        <form action="https://usebasin.com/f/cd3dfedbcfab" method="POST">
+            <p>
+                <label for="Name">Name:</label>
+                <div class="input-container">
+                    <input type="text" id="name" name="name">
+                </div>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <div class="input-container">
+                    <input id="email" name="email" type="email" required>
+                </div>
+            </p>
+            <p>
+                <label for="message">Let's chat!</label>
+            </p>
+            <div class="text-div">
+                <textarea name="message" id="message" cols="5"></textarea>
+            </div>
+            <div class="btn-container-form">
+                <button class="form-button">Submit</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
